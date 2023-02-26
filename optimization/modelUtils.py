@@ -1,4 +1,4 @@
-import cdd
+import cdd # install the 'pycddlib' package for 'cdd'
 import csv
 from gurobipy import *
 from itertools import chain, combinations
