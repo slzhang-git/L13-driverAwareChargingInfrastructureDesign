@@ -1,5 +1,9 @@
 from interface import optimize, simulate
 
+if __name__ ==  '__main__':
+    optimize("example/positions.csv", "example/drivers.csv", "example/trips.csv",  "example/result.csv")
+    simulate("example/result.csv", "example/drivers.csv", "example/trips.csv", "example/positions.csv")
+'''
 #recall to set specific settings in optimization/const.py (in particular model and instance settings)
 optimize("example/positions.csv",   #planning area in transformed coordinates based on the region of Düsseldorf
                                     #based on https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/duesseldorf/duesseldorf-v1.0/original-data/duesseldorf-area-shp/
@@ -18,3 +22,4 @@ simulate("example/result.csv",      #output frome above
          "example/drivers.csv",     #same input as above
          "example/trips.csv",       #same input as above
          "example/positions.csv")   #same input as above (for deciding which charging plans are reasonable)
+'''
